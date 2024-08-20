@@ -27,3 +27,7 @@ The provided code is a Python script that allows users to input the URL of a web
     source ./venv/bin/activate
     pip install -r requirements.txt
     python main.py
+
+## Additional article
+
+[Bag of What? Simple Noun Phrase Extraction for Text Analysis](https://brenocon.com/handler2016phrases.pdf)
