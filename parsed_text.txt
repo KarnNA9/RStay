@@ -1,0 +1,155 @@
+
+
+
+
+ColorBrewer: Color Advice for Maps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Number of data classes:
+
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+
+ 
+
+
+Nature of your data:
+sequential
+diverging
+qualitative
+
+
+Pick a color scheme:
+
+
+
+ 
+
+
+
+ 
+ 
+
+
+
+Only show:
+
+colorblind safe
+print friendly
+photocopy safe
+ 
+
+Context:
+
+roads
+cities
+borders
+ 
+Background:
+
+solid color
+terrain
+
+
+
+color transparency
+
+ 
+ 
+
+BuGn
+
+
+
+
+
+
+
+HEX
+RGB
+CMYK
+
+
+
+ 
+ 
+ 
+
+how to use | updates | downloads | credits
+COLORBREWER 2.0
+color advice for cartography
+ 
+
+
+
+ 
+
+
+EXPORT
+ 
+
+Export your selected color scheme:
+
+Permalink
+Share a direct link to this color scheme.
+
+ 
+
+Adobe
+Download an Adobe Swatch Exchange (ASE) file of this scheme.
+ 
+
+GIMP and Inkscape
+GIMP color palette for this scheme.
+ 
+
+JavaScript
+Colors for this scheme as a JS array
+
+
+
+CSS
+CSS classes for this scheme
+
+
+ 
+ 
+
+ 
+
+
+© Cynthia Brewer, Mark Harrower and The Pennsylvania State University
+Source code and feedback
+Back to Flash version
+Back to ColorBrewer 1.0
+ 
+
+
+X
+MUGGIN'
+
+
+
+
