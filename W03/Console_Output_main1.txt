@@ -1,0 +1,8 @@
+Console_Output_main1
+
+(venv) C:\Users\karn\OneDrive\Documentos\INV_STAY\week3>python main1.py
+Original Text:
+A language model is a type of probabilistic model that assigns probabilities to sequences of words. It is used in various natural language processing tasks.
+
+Generated Text:
+type of probabilistic model is a type of probabilistic model is used in various natural language model is a type of words. It is a type of probabilistic model that
