@@ -31,6 +31,10 @@ In conclusion, Language Modeling and N-grams are core techniques in NLP. They en
 [Building Wikipedia N-grams with Apache Spark
 ](https://www.researchgate.net/profile/Jorge-Fonseca-10/publication/361805716_Building_Wikipedia_N-grams_with_Apache_Spark/links/63146b815eed5e4bd1468051/Building-Wikipedia-N-grams-with-Apache-Spark.pdf)
 
+Additional article
+
+[Are All Languages Equally Hard to Language-Model?](https://aclanthology.org/N18-2085v2.pdf)
+
 # Code examples
 
 Example 1: Simple Language Model and N-Grams
@@ -61,7 +65,6 @@ Finally, we'll use this more powerful language model to generate a longer piece 
 
 The result will be an extended text that sounds like it was written by an author using similar writing styles to those found in the Brown corpus. This is the kind of thing used in more advanced natural language processing tasks, like chatbots and text generation applications.
 
-# Proof-of-Concept
 
 
 
