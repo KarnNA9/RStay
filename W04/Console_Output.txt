@@ -1,0 +1,19 @@
+Example 1 - Normal Distribution:
+Estimated mean: 2.5599999999999996
+Estimated standard deviation: 1.049952379872535
+
+Example 2 - Exponential Distribution:
+Estimated lambda: 0.7812500000000001
+
+Example 3 - Poisson Distribution:
+Estimated lambda: 3.2
+
+Example 4 - Gamma Distribution:
+Estimated shape: 0.09
+Estimated scale: 3.3333333333333335
+
+Example 5 - Mixture of Normals:
+Estimated mean (Component 1): 6.133333333333333
+Estimated standard deviation (Component 1): 4.094169295745136
+Estimated mean (Component 2): 10.227502629078469
+Estimated standard deviation (Component 2): 4.094169295745136
