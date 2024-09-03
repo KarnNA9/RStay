@@ -12,7 +12,7 @@ while rep == 1:
         return mu, sigma
 
     # np.random.seed(0)
-    data_example1 = [1.2, 2.5, 1.7, 3.3, 4.1] # np.random.uniform(1, 4.5, 50) # 
+    data_example1 = np.random.uniform(1, 4.5, 50) # [1.2, 2.5, 1.7, 3.3, 4.1] # 
     mu1, sigma1 = mle_normal(data_example1)
     print(" - Example 1 - Normal Distribution:")
     print(" - Data:", data_example1)
@@ -47,7 +47,7 @@ while rep == 1:
         lam = 1 / np.mean(data)
         return lam
 
-    data_example2 = [0.5, 1.3, 2.7, 1.1, 0.8] # np.random.uniform(0.5, 3, 50) # 
+    data_example2 = np.random.uniform(0.5, 3, 50) # [0.5, 1.3, 2.7, 1.1, 0.8] # 
     lam2 = mle_exponential(data_example2)
     print(" - Example 2 - Exponential Distribution:")
     print(" - Data:", data_example2)
@@ -81,7 +81,7 @@ while rep == 1:
         lam = np.mean(data)
         return lam
 
-    data_example3 = [2, 4, 3, 5, 2] # np.random.uniform(2, 5, 50) # 
+    data_example3 = np.random.uniform(2, 5, 50) # [2, 4, 3, 5, 2] # 
     lam3 = mle_poisson(data_example3)
     print(" - Example 3 - Poisson Distribution:")
     print(" - Data:", data_example3)
@@ -116,7 +116,7 @@ while rep == 1:
         scale = np.var(data) / np.mean(data)
         return shape, scale
 
-    data_example4 = [5, 10, 15, 20, 25] # np.random.uniform(5, 20, 50) # 
+    data_example4 = np.random.uniform(5, 20, 50) # [5, 10, 15, 20, 25] #
     shape4, scale4 = mle_gamma(data_example4)
     print(" - Example 4 - Gamma Distribution:")
     print(" - Data:", data_example4)
@@ -155,7 +155,7 @@ while rep == 1:
         sigma2 = np.std(data)
         return mu1, sigma1, mu2, sigma2
 
-    data_example5 = [1.2, 2.5, 1.7, 3.3, 4.1, 10.2, 9.8, 11.5, 10.9] #  np.random.uniform(1, 12, 50) # 
+    data_example5 = np.random.uniform(1, 12, 50) # [1.2, 2.5, 1.7, 3.3, 4.1, 10.2, 9.8, 11.5, 10.9] # 
     mu1_5, sigma1_5, mu2_5, sigma2_5 = mle_mixture_of_normals(data_example5)
     print(" - Example 5 - Mixture of Normals:")
     print(" - Data:", data_example5)
