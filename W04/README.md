@@ -25,14 +25,19 @@ This is a very basic example, but the principle of MLE is used in much more comp
 
 [Tutorial on maximum likelihood estimation](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4ab2cfe6766a5007b2fcf8cfffbf7fb566c077f4)
 
-
-[Bias reduction of maximum likelihood estimates](https://www2.stat.duke.edu/~scs/Courses/Stat376/Papers/GibbsFieldEst/BiasReductionMLE.pdf)
+[Bias reduction of maximum likelihood estimates](https://sci-hub.se/https://doi.org/10.2307/2336755)
 
 [Maximum likelihood estimation of logistic regression models: theory and implementation](https://saedsayad.com/docs/mlelr.pdf)
+
+Additional article
+
+[Does the MLE Maximize the Likelihood?](http://lagrange.math.siu.edu/Olive/simle.pdf)
 
 # Code examples
 
 In this Python source code, we explore the concept of Maximum Likelihood Estimation (MLE) through five progressively challenging examples. MLE is a statistical method used to estimate the parameters of a probability distribution from observed data.
+
+main1.py includes graphs for each example and can be run with random data. 
 
 Example 1 - MLE for Normal Distribution:
 We estimate the mean and standard deviation of a normal distribution based on a set of data points. The mean is calculated as the average of the data, and the standard deviation measures the spread of the data.
