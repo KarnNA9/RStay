@@ -33,16 +33,16 @@ After successful training, if we present a new image to the network, it can pred
 
 # Readings
 
-[Artificial neural networks](https://d1wqtxts1xzle7.cloudfront.net/31377814/Artificial_Neural_Network-libre.pdf?1392407140=&response-content-disposition=inline%3B+filename%3DIISTE_May_30th_Edition_Peer_reviewed_art.pdf&Expires=1691285456&Signature=eB3umMSnbh1JwnQM9fsBHjZZDFEFYi2gSYVk~E3cFhySy~SqPlRHYQhG2pQE5OqEmJ39csE02kRp7y3TRSclIhHYwEOqmCmNBmBV0rEX8CYkBZ8G8gcRV8YcKnOGDNwx6RM3e2dne3dzpyolrEN8SeF8-LsaFrg5pvbrRntXeWTg5eno3Q6UJeRYv0KbO~aCd40L8rPOKVaIsqQ8szQQt1D6t~zP72MWqETxsK-~i6kmtPQJponKEZwd1zqeWruoBEbRIW2VKzjz~sKjc1~Z-S8qhd8eL7BLfaCdsZZxjx1ZWuPasMPtrEVc-dL4NfqjsWUB3Wrbb8bnVo31kHGWyA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA){:target="_blank"}
+[Artificial neural networks](https://d1wqtxts1xzle7.cloudfront.net/31377814/Artificial_Neural_Network-libre.pdf?1392407140=&response-content-disposition=inline%3B+filename%3DIISTE_May_30th_Edition_Peer_reviewed_art.pdf&Expires=1691285456&Signature=eB3umMSnbh1JwnQM9fsBHjZZDFEFYi2gSYVk~E3cFhySy~SqPlRHYQhG2pQE5OqEmJ39csE02kRp7y3TRSclIhHYwEOqmCmNBmBV0rEX8CYkBZ8G8gcRV8YcKnOGDNwx6RM3e2dne3dzpyolrEN8SeF8-LsaFrg5pvbrRntXeWTg5eno3Q6UJeRYv0KbO~aCd40L8rPOKVaIsqQ8szQQt1D6t~zP72MWqETxsK-~i6kmtPQJponKEZwd1zqeWruoBEbRIW2VKzjz~sKjc1~Z-S8qhd8eL7BLfaCdsZZxjx1ZWuPasMPtrEVc-dL4NfqjsWUB3Wrbb8bnVo31kHGWyA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA)
 
-[Introduction to artificial neural networks](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=04d0b6952a4f0c7203577afc9476c2fcab2cba06){:target="_blank"}
+[Introduction to artificial neural networks](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=04d0b6952a4f0c7203577afc9476c2fcab2cba06)
 
-[Book: introduction to neural networks](https://ds.amu.edu.et/xmlui/bitstream/handle/123456789/4338/an-introduction-to-neural-networks.9781857286731.36028.pdf?sequence=1&isAllowed=y){:target="_blank"}
+[Book: introduction to neural networks](https://ds.amu.edu.et/xmlui/bitstream/handle/123456789/4338/an-introduction-to-neural-networks.9781857286731.36028.pdf?sequence=1&isAllowed=y)
 
 Additional article
 
-[Development and Application of Artificial Neural Network](https://link.springer.com/article/10.1007/s11277-017-5224-x){:target="_blank"}
-[Development and Application of Artificial Neural Network - readable](https://sci-hub.se/10.1007/s11277-017-5224-x){:target="_blank"}
+[Development and Application of Artificial Neural Network](https://link.springer.com/article/10.1007/s11277-017-5224-x)
+[Development and Application of Artificial Neural Network - readable](https://sci-hub.se/10.1007/s11277-017-5224-x)
 
 # Code Example 1
 
