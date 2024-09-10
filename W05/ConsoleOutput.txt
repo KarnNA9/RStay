@@ -1,0 +1,51 @@
+(venv) C:\Users\karn\OneDrive\Documentos\INV_STAY\W05>python example1.py
+Epoch 0, Loss: 0.2896633446216583
+Epoch 1000, Loss: 0.2489221692085266
+Epoch 2000, Loss: 0.24648848176002502
+Epoch 3000, Loss: 0.2384619414806366
+Epoch 4000, Loss: 0.21931858360767365
+Epoch 5000, Loss: 0.19252809882164001
+Epoch 6000, Loss: 0.16983562707901
+Epoch 7000, Loss: 0.14416615664958954
+Epoch 8000, Loss: 0.08319811522960663
+Epoch 9000, Loss: 0.03947368264198303
+
+Predictions:
+tensor([[0.1323],
+        [0.8554],
+        [0.8567],
+        [0.1699]])
+
+(venv) C:\Users\karn\OneDrive\Documentos\INV_STAY\W05>python example2.py
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-images-idx3-ubyte.gz to ./data\FashionMNIST\raw\train-images-idx3-ubyte.gz
+100.0%
+Extracting ./data\FashionMNIST\raw\train-images-idx3-ubyte.gz to ./data\FashionMNIST\raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/train-labels-idx1-ubyte.gz to ./data\FashionMNIST\raw\train-labels-idx1-ubyte.gz
+100.0%
+Extracting ./data\FashionMNIST\raw\train-labels-idx1-ubyte.gz to ./data\FashionMNIST\raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-images-idx3-ubyte.gz to ./data\FashionMNIST\raw\t10k-images-idx3-ubyte.gz
+100.0%
+Extracting ./data\FashionMNIST\raw\t10k-images-idx3-ubyte.gz to ./data\FashionMNIST\raw
+
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz
+Downloading http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/t10k-labels-idx1-ubyte.gz to ./data\FashionMNIST\raw\t10k-labels-idx1-ubyte.gz
+100.0%
+Extracting ./data\FashionMNIST\raw\t10k-labels-idx1-ubyte.gz to ./data\FashionMNIST\raw
+
+Epoch 1, Loss: 0.4416531268854936
+Epoch 2, Loss: 0.290010889450709
+Epoch 3, Loss: 0.24258468672434488
+Epoch 4, Loss: 0.2130022698064645
+Epoch 5, Loss: 0.1859463113506635
+Epoch 6, Loss: 0.16578241551692288
+Epoch 7, Loss: 0.14743058305631082
+Epoch 8, Loss: 0.1318560681571563
+Epoch 9, Loss: 0.11488135344510277
+Epoch 10, Loss: 0.10145187614535292
+Training Finished!
+Test Accuracy: 91.88%
