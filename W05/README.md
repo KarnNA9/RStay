@@ -42,6 +42,7 @@ After successful training, if we present a new image to the network, it can pred
 Additional article
 
 [Development and Application of Artificial Neural Network](https://link.springer.com/article/10.1007/s11277-017-5224-x)
+
 [Development and Application of Artificial Neural Network - readable](https://sci-hub.se/10.1007/s11277-017-5224-x)
 
 # Code Example 1
