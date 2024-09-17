@@ -11,8 +11,8 @@ target = np.array([i for i in range(2, 12)])
 # print(target)
 
 # Convert the data to PyTorch tensors
-data = torch.tensor(data, dtype=torch.float32).view(2, 10, 1) # view(2, 10, 1)
-target = torch.tensor(target, dtype=torch.float32).view(1, 10, 1) # view included 
+data = torch.tensor(data, dtype=torch.float32).view(10, 2, 1) # view(2, 10, 1)
+target = torch.tensor(target, dtype=torch.float32)
 
 # Define the LSTM model
 class LSTMModel(nn.Module):
