@@ -8,8 +8,8 @@ data = np.array([[i for i in range(10)], [i for i in range(1, 11)]])
 target = np.array([i for i in range(2, 12)])
 
 # Convert the data to PyTorch tensors
-data = torch.tensor(data, dtype=torch.float32).view(2, 10, 1)
-target = torch.tensor(target, dtype=torch.float32).view(1, 10, 1)
+data = torch.tensor(data, dtype=torch.float32).view(10, 2, 1)
+target = torch.tensor(target, dtype=torch.float32)
 
 # Define the GRU model
 
