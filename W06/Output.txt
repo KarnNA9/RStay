@@ -1,0 +1,35 @@
+example1.py==================================================
+
+C:\Users\karn\OneDrive\Documentos\INV_STAY\W06\venv\Lib\site-packages\torch\nn\modules\loss.py:538: UserWarning: Using a target size (torch.Size([1, 10, 1])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Epoch 0, Loss: 51.55173873901367
+Epoch 100, Loss: 8.250137329101562
+Epoch 200, Loss: 8.25
+Epoch 300, Loss: 8.25
+Epoch 400, Loss: 8.250000953674316
+Epoch 500, Loss: 8.250000953674316
+Epoch 600, Loss: 8.250000953674316
+Epoch 700, Loss: 8.250000953674316
+Epoch 800, Loss: 8.250000953674316
+Epoch 900, Loss: 8.250000953674316
+
+Predictions:
+[6.13727]
+
+example2.py==================================================
+
+C:\Users\karn\OneDrive\Documentos\INV_STAY\W06\venv\Lib\site-packages\torch\nn\modules\loss.py:538: UserWarning: Using a target size (torch.Size([1, 10, 1])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Epoch 0, Loss: 47.05510711669922
+Epoch 100, Loss: 8.25002670288086
+Epoch 200, Loss: 8.25
+Epoch 300, Loss: 8.25
+Epoch 400, Loss: 8.25
+Epoch 500, Loss: 8.25
+Epoch 600, Loss: 8.25
+Epoch 700, Loss: 8.25
+Epoch 800, Loss: 8.25
+Epoch 900, Loss: 8.25
+
+Predictions:
+[6.491059]
