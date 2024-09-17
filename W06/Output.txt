@@ -1,35 +1,31 @@
 example1.py==================================================
 
-C:\Users\karn\OneDrive\Documentos\INV_STAY\W06\venv\Lib\site-packages\torch\nn\modules\loss.py:538: UserWarning: Using a target size (torch.Size([1, 10, 1])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
-  return F.mse_loss(input, target, reduction=self.reduction)
-Epoch 0, Loss: 51.55173873901367
-Epoch 100, Loss: 8.250137329101562
-Epoch 200, Loss: 8.25
-Epoch 300, Loss: 8.25
-Epoch 400, Loss: 8.250000953674316
-Epoch 500, Loss: 8.250000953674316
-Epoch 600, Loss: 8.250000953674316
-Epoch 700, Loss: 8.250000953674316
-Epoch 800, Loss: 8.250000953674316
-Epoch 900, Loss: 8.250000953674316
+Epoch 0, Loss: 48.009063720703125
+Epoch 100, Loss: 4.9281697273254395
+Epoch 200, Loss: 3.7508139610290527
+Epoch 300, Loss: 2.839992046356201
+Epoch 400, Loss: 1.4874718189239502
+Epoch 500, Loss: 1.0797244310379028
+Epoch 600, Loss: 0.18025356531143188
+Epoch 700, Loss: 0.06450881063938141
+Epoch 800, Loss: 0.00911154504865408
+Epoch 900, Loss: 0.00021260444191284478
 
 Predictions:
-[6.13727]
+[11.11504]
 
 example2.py==================================================
 
-C:\Users\karn\OneDrive\Documentos\INV_STAY\W06\venv\Lib\site-packages\torch\nn\modules\loss.py:538: UserWarning: Using a target size (torch.Size([1, 10, 1])) that is different to the input size (torch.Size([2])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
-  return F.mse_loss(input, target, reduction=self.reduction)
-Epoch 0, Loss: 47.05510711669922
-Epoch 100, Loss: 8.25002670288086
-Epoch 200, Loss: 8.25
-Epoch 300, Loss: 8.25
-Epoch 400, Loss: 8.25
-Epoch 500, Loss: 8.25
-Epoch 600, Loss: 8.25
-Epoch 700, Loss: 8.25
-Epoch 800, Loss: 8.25
-Epoch 900, Loss: 8.25
+Epoch 0, Loss: 52.482215881347656
+Epoch 100, Loss: 4.77276086807251
+Epoch 200, Loss: 3.191174268722534
+Epoch 300, Loss: 1.196089506149292
+Epoch 400, Loss: 0.5901355743408203
+Epoch 500, Loss: 1.8920323848724365
+Epoch 600, Loss: 0.3838488757610321
+Epoch 700, Loss: 0.09019988030195236
+Epoch 800, Loss: 0.011539668776094913
+Epoch 900, Loss: 0.000660615973174572
 
 Predictions:
-[6.491059]
+[11.030857]
