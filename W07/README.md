@@ -36,6 +36,10 @@ For instance, in sentiment analysis, where the goal is to determine the sentimen
 
 [Evaluation methods for unsupervised word embeddings](https://aclanthology.org/D15-1036.pdf)
 
+Additional Article
+
+[Word Embedding Evaluation and Combination](https://aclanthology.org/L16-1046/)
+
 # Code examples
 
 Example 1: Simple Word Embeddings
