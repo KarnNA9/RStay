@@ -17,11 +17,12 @@ class TranslationDataset(Dataset):
 
 # Dummy data
 training_pairs = [
-    ("I am a student", "Je suis étudiant"),
-    ("He likes ice cream", "Il aime la glace"),
-    ("She speaks French", "Elle parle français"),
-    ("They are happy", "Ils sont heureux"),
-    ("We eat dinner", "Nous dînons")]
+    ("<SOS> I am a student <EOS>", "<SOS> Je suis étudiant <EOS>"),
+    ("<SOS> He likes ice cream <EOS>", "<SOS> Il aime la glace <EOS>"),
+    ("<SOS> She speaks French <EOS>", "<SOS> Elle parle français <EOS>"),
+    ("<SOS> They are happy <EOS>", "<SOS> Ils sont heureux <EOS>"),
+    ("<SOS> We eat dinner <EOS>", "<SOS> Nous dînons <EOS>")
+]
 
 # Build vocabulary
 input_vocab = set()
@@ -29,11 +30,6 @@ output_vocab = set()
 for pair in training_pairs:
     input_vocab.update(pair[0].split())
     output_vocab.update(pair[1].split())
-
-input_vocab.add('<SOS>')
-input_vocab.add('<EOS>')
-output_vocab.add('<SOS>')
-output_vocab.add('<EOS>')
 
 input_vocab_size = len(input_vocab)
 output_vocab_size = len(output_vocab)
@@ -45,14 +41,8 @@ output_word2idx = {word: idx for idx, word in enumerate(output_vocab)}
 def sentence_to_tensor(sentence, vocab):
     return torch.tensor([vocab[word] for word in sentence.split()])
 
-# training_data = [(sentence_to_tensor(pair[0], input_word2idx), 
-#                   sentence_to_tensor(pair[1], output_word2idx))
-#                  for pair in training_pairs]
-training_data = [
-    (sentence_to_tensor(pair[0], input_word2idx).unsqueeze(1), 
-     sentence_to_tensor(pair[1], output_word2idx).unsqueeze(1))
-    for pair in training_pairs
-]
+training_data = [(sentence_to_tensor(pair[0], input_word2idx), sentence_to_tensor(pair[1], output_word2idx))
+                 for pair in training_pairs]
 
 # Encoder model
 class Encoder(nn.Module):
@@ -91,6 +81,11 @@ class EncoderDecoder(nn.Module):
         self.decoder = decoder
 
     def forward(self, src, trg, teacher_forcing_ratio=0.5):
+        if (len(trg.shape) == 1):
+            trg = trg.unsqueeze(1)
+        if (len(src.shape) == 1):
+            src = src.unsqueeze(1)
+            
         batch_size = trg.shape[1]
         target_len = trg.shape[0]
         target_vocab_size = self.decoder.out.out_features
@@ -154,8 +149,8 @@ def translate_sentence(sentence, model, input_vocab, output_vocab):
             trg_indexes.append(pred_token)
             if pred_token == output_word2idx['<EOS>']:
                 break
-        trg_tokens = [list(output_word2idx.keys())[idx] for idx in trg_indexes if idx in output_word2idx.values()] # [output_vocab[idx] for idx in trg_indexes]
-        return trg_tokens[1:]
+        trg_tokens = [list(output_vocab.keys())[idx] for idx in trg_indexes]
+        return trg_tokens[1:-1]
 
 # Test translation
 test_sentence = "We are happy"
