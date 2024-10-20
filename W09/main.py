@@ -17,11 +17,11 @@ class TranslationDataset(Dataset):
 
 # Dummy data
 training_pairs = [
-    ("I am a student", "Je suis étudiant"),
-    ("He likes ice cream", "Il aime la glace"),
-    ("She speaks French", "Elle parle français"),
-    ("They are happy", "Ils sont heureux"),
-    ("We eat dinner", "Nous dînons")
+    ("<SOS> I am a student <EOS>", "<SOS> Je suis étudiant <EOS>"),
+    ("<SOS> He likes ice cream <EOS>", "<SOS> Il aime la glace <EOS>"),
+    ("<SOS> She speaks French <EOS>", "<SOS> Elle parle français <EOS>"),
+    ("<SOS> They are happy <EOS>", "<SOS> Ils sont heureux <EOS>"),
+    ("<SOS> We eat dinner <EOS>", "<SOS> Nous dînons <EOS>"),
 ]
 
 # Build vocabulary
@@ -64,11 +64,13 @@ class Attention(nn.Module):
         self.hidden_size = hidden_size
 
     def forward(self, encoder_outputs, decoder_hidden):
-        batch_size = encoder_outputs.size(0)
-        seq_len = encoder_outputs.size(1)
+        decoder_hidden = decoder_hidden.transpose(0, 1).transpose(1, 2)
+        encoder_outputs = encoder_outputs.transpose(0, 1)
 
-        decoder_hidden = decoder_hidden.unsqueeze(2)
-        attn_weights = torch.bmm(encoder_outputs, decoder_hidden).squeeze(2)
+        d_size = decoder_hidden.shape
+        e_size = encoder_outputs.shape
+
+        attn_weights = torch.bmm(encoder_outputs, decoder_hidden).transpose(0, 2).squeeze(2)
         attn_weights = F.softmax(attn_weights, dim=1).unsqueeze(1)
 
         context = torch.bmm(attn_weights, encoder_outputs)
@@ -82,7 +84,7 @@ class Decoder(nn.Module):
         self.embedding = nn.Embedding(output_size, hidden_size)
         self.rnn = nn.GRU(hidden_size, hidden_size)
         self.attention = Attention(hidden_size)
-        self.out = nn.Linear(hidden_size, output_size)
+        self.out = nn.Linear(hidden_size*2, output_size)
 
     def forward(self, x, hidden, encoder_outputs):
         x = x.unsqueeze(0)
@@ -93,6 +95,7 @@ class Decoder(nn.Module):
         output = F.log_softmax(self.out(output.squeeze(0)), dim=1)
         return output, hidden
 
+
 # Encoder-Decoder model with attention
 class EncoderDecoderAttention(nn.Module):
     def __init__(self, encoder, decoder):
@@ -101,6 +104,12 @@ class EncoderDecoderAttention(nn.Module):
         self.decoder = decoder
 
     def forward(self, src, trg, teacher_forcing_ratio=0.5):
+        # !        
+        if (len(trg.shape) == 1):
+            trg = trg.unsqueeze(1)
+        if (len(src.shape) == 1):
+            src = src.unsqueeze(1)
+            
         batch_size = trg.shape[1]
         target_len = trg.shape[0]
         target_vocab_size = self.decoder.out.out_features
@@ -158,8 +167,8 @@ def translate_sentence(sentence, model, input_vocab, output_vocab):
             trg_indexes.append(pred_token)
             if pred_token == output_word2idx['<EOS>']:
                 break
-        trg_tokens = [output_vocab[idx] for idx in trg_indexes]
-        return trg_tokens[1:]
+        trg_tokens = [list(output_vocab.keys())[idx] for idx in trg_indexes]
+        return trg_tokens[1:-1]
 
 # Test translation
 test_sentence = "We are happy"
