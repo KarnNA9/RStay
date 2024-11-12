@@ -1,0 +1,16 @@
+tokenizer_config.json: 100%|████████████████████████████████████████████████████████████████| 48.0/48.0 [00:00<?, ?B/s]
+vocab.txt: 100%|████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 1.62MB/s]
+tokenizer.json: 100%|███████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 5.93MB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████████| 570/570 [00:00<?, ?B/s]
+model.safetensors: 100%|████████████████████████████████████████████████████████████| 440M/440M [01:02<00:00, 7.03MB/s]
+Sentence: I am so happy today!
+Predicted Emotion: Sad
+
+Sentence: I feel really sad about what happened.
+Predicted Emotion: Sad
+
+Sentence: That made me angry!
+Predicted Emotion: Sad
+
+Sentence: It's just another regular day.
+Predicted Emotion: Sad
