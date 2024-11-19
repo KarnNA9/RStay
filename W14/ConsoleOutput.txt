@@ -1,0 +1,20 @@
+Sentiment_bot.py
+
+Chatbot: Hi! I'm the Sentiment Analysis Bot. You can type 'exit' to end the conversation.
+You: I'm not happy
+Chatbot: The sentiment of your input is negative.
+You: gooiutioe
+Chatbot: The sentiment of your input is neutral.
+You: It's 14:00
+Chatbot: The sentiment of your input is neutral.
+You: This book is very complex
+Chatbot: The sentiment of your input is negative.
+You: This movie is very complex
+Chatbot: The sentiment of your input is negative.
+You: This model's algorithm is complex
+Chatbot: The sentiment of your input is negative.
+You: exit
+Chatbot: Goodbye!
+
+
+
